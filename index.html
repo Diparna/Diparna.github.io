@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Your Name — Resume</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Resume of Your Name" />
+</head>
+
+<body>
+  <header class="container">
+    <div class="top">
+      <div>
+        <h1>Your Name</h1>
+        <p class="subtitle">Data Science Graduate Student • Analytics • ML • MLOps</p>
+      </div>
+      <div class="links">
+        <a href="mailto:you@email.com">you@email.com</a>
+        <span>•</span>
+        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span>•</span>
+        <a href="https://github.com/yourusername" target="_blank" rel="noreferrer">GitHub</a>
+        <span>•</span>
+        <span>City, State</span>
+      </div>
+    </div>
+
+    <div class="actions">
+      <a class="btn" href="resume.pdf" target="_blank" rel="noreferrer">Download PDF</a>
+      <a class="btn secondary" href="#projects">Projects</a>
+      <a class="btn secondary" href="#experience">Experience</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Summary</h2>
+      <p>
+        Write 2–3 lines about your strengths, industries, and what roles you’re targeting.
+        Keep it specific (tools + impact + domain).
+      </p>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Data / ML</h3>
+          <p>Python, pandas, scikit-learn, XGBoost, forecasting (Prophet/LSTM), EDA, A/B testing</p>
+        </div>
+        <div class="card">
+          <h3>Visualization</h3>
+          <p>Tableau, Power BI, Matplotlib, Streamlit dashboards</p>
+        </div>
+        <div class="card">
+          <h3>Data Engineering</h3>
+          <p>SQL, ETL pipelines, Parquet, APIs, GitHub, Docker, MLflow</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="item">
+        <div class="row">
+          <h3>Role Title — Company</h3>
+          <span class="muted">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="muted">Location • Team</div>
+        <ul>
+          <li>Impact bullet with metric (e.g., reduced reporting time by 40% using automation).</li>
+          <li>What you built + tools used (Python/SQL/Power BI/MLflow/Docker).</li>
+          <li>Stakeholder/result bullet.</li>
+        </ul>
+      </div>
+
+      <div class="item">
+        <div class="row">
+          <h3>Role Title — Company</h3>
+          <span class="muted">Month YYYY – Month YYYY</span>
+        </div>
+        <div class="muted">Location</div>
+        <ul>
+          <li>Bullet</li>
+          <li>Bullet</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div class="item">
+        <div class="row">
+          <h3>Project Name</h3>
+          <span class="muted">
+            <a href="https://github.com/yourusername/your-project" target="_blank" rel="noreferrer">Repo</a>
+            •
+            <a href="https://yourusername.github.io" target="_blank" rel="noreferrer">Demo</a>
+          </span>
+        </div>
+        <ul>
+          <li>What it does + outcome (include metric if possible).</li>
+          <li>Key stack: Python, Streamlit, XGBoost, MLflow, Docker.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="item">
+        <div class="row">
+          <h3>Michigan State University — M.S. Data Science</h3>
+          <span class="muted">Expected YYYY</span>
+        </div>
+        <div class="muted">Relevant: ML, Data Mining, Forecasting, MLOps</div>
+      </div>
+    </section>
+
+    <footer class="footer muted">
+      <span>Last updated: <span id="updated"></span></span>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("updated").textContent = new Date().toLocaleDateString();
+  </script>
+</body>
+</html>
