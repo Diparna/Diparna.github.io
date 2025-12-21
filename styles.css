@@ -87,6 +87,20 @@ h3 { margin: 0; font-size: 16px; }
   margin: 12px 0;
 }
 
+.name-block {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.profile-pic {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid var(--border);
+}
+
 .row {
   display: flex;
   align-items: baseline;
