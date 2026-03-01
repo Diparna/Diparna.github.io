@@ -1,2 +1,4 @@
 # Diparna.github.io
-Building an online portfolio!
+Welcome to my online portfolio! 
+
+Going to the website might be better!
